@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class sucursales
+    class Cliente
     {
-        string sucursal;
-        public sucursales(string misucursal)
+        string tipo;
+        
+        public Cliente(string tipo)
         {
-            sucursal = misucursal;
+            this.tipo = tipo;
+          
         }
-   
+        
     }
 }

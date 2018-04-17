@@ -6,7 +6,37 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class empresa
+    class Empresa
     {
+        bool permisobus;
+        bool permisomaqpesada;
+        int licencia;
+        public Empresa(int licencia)
+        {
+            this.licencia = licencia;
+        }
+        public Boolean Permisoe(int licencia)
+        {
+            permisomaqpesada = false;
+            permisobus = false;
+
+            if (licencia >= 3)
+            {
+                permisomaqpesada = true;
+                permisobus = true;
+            }
+            if (licencia >= 2)
+            {
+                permisobus = true;
+            }
+            return false;
+
+
+
+
+        }
     }
 }
+            
+    
+
